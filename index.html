@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA APOD Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NASA Astronomy Picture of the Day</h1>
+  </header>
+
+  <main class="container">
+    <!-- Search Form -->
+    <form id="searchForm">
+      <label for="dateInput">Select a date:</label>
+      <input type="date" id="dateInput" max="" required>
+      <button type="submit" id="searchBtn">Search</button>
+    </form>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="hidden">Loading...</div>
+
+    <!-- APOD Display Section -->
+    <section id="result" class="hidden">
+      <h2 id="title"></h2>
+      <p id="date"></p>
+      
+      <a id="hdLink" href="#" target="_blank">
+        <img id="image" src="" alt="Astronomy Picture of the Day">
+      </a>
+      
+      <p id="description"></p>
+      <button id="saveBtn">Save to Favorites ⭐</button>
+    </section>
+
+    <!-- Favorites Section -->
+    <section id="favoritesSection">
+      <h2>Favorites</h2>
+      <div id="favorites"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Space Explorer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
